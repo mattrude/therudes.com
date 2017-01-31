@@ -1,0 +1,202 @@
+body {
+  padding-top: 70px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.offsetanchor:before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 1200px) {
+  [class*="col-"] {
+    margin-bottom: 20px;
+  }
+}
+
+.dropdown-menu {
+  width: 1000px;
+  margin-left: -425px;
+}
+
+.dropdown-menu>li {
+  padding: 3px 10px;
+}
+
+
+.dropdown-menu>li>a {
+  display: inline;
+  padding: 3px 10px;
+}
+
+
+.section .parallax > img {
+  width:100%;
+}
+
+/* Main Page Header Section */
+
+.section-header .content {
+    position: relative;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    vertical-align: center;
+    line-height: 1.7;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section-header .container {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+}
+
+@media (max-width: 695px) {
+    .section-header h1 {
+        letter-spacing: 0.1em;
+        font-weight: 100;
+        font-family: "Slim-Joe";
+        text-transform: uppercase;
+        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, .h1 {
+        font-size: 3em;
+        line-height: 1.213483146em;
+        font-weight: bold;
+    }
+    .section-header .section div, body > div.section.section-header > div > div {
+        background-image: url(/assets/img/cabin-sideview.moble.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+}
+
+
+@media (min-width: 695px) {
+    .section-header h1 {
+        letter-spacing: 0.1em;
+        font-weight: 100;
+        font-size: 6em;
+        font-family: "Slim-Joe";
+        text-transform: uppercase;
+        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, .h1 {
+        font-size: 3em;
+        line-height: 1.213483146em;
+        font-weight: bold;
+    }
+    .section-header .section div, body > div.section.section-header > div > div {
+        background-image: url(/assets/img/cabin-sideview.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+}
+
+.separator-container {
+    text-align: center;
+    position: relative;
+}
+
+@media (min-width: 768px)
+.section-header .separator {
+    width: 20em;
+}
+
+.section-header .separator {
+    color: #fff;
+    margin: 2em auto;
+    max-width: 300px;
+}
+
+.section .parallax, .section .full-image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+}
+
+.pattern-image {
+    width: 100%;
+    background-size: 100%;
+}
+
+.section-header {
+    padding: 0;
+}
+
+.section {
+    padding: 1.875em 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.separator-container .separator.line-separator:before {
+    float: left;
+}
+
+.separator-container .separator.line-separator:after {
+    float: right;
+}
+
+.separator-container .separator.line-separator:before, .separator-container .separator.line-separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 14px;
+    border: 1px solid #c5a47e;
+}
+
+.section-header .separator.line-separator:before, .section-header .separator.line-separator:after {
+    border-color: white;
+}
+
+
+
+
+/* Mein Page Header Section Ends */
+
+li.active {
+    background-color:grey; 
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color:grey; 
+}
+.nav>li>a, .nav>li>a:hover, .nav>li>a:focus {
+    color: #fff;
+}
+
+.partners {
+  float: left;
+  margin-right: 15px;
+}
+
+.table_of_contents {
+    float: right;
+    margin: 0 0 15px 15px;
+    padding: 5px;
+    border: 1px solid #AAA;
+}

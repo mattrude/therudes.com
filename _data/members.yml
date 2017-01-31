@@ -1,0 +1,18 @@
+- name: Doug Rude
+  image: assets/img/contact/doug.jpeg
+  email: doug@therudes.com
+  xmpp: doug@therudes.com
+  
+- name: Sandy Rude
+  image: assets/img/contact/sandy.jpeg
+  email: sandy@therudes.com
+  facebook: sandra.b.rude
+  xmpp: sandy@therudes.com
+
+- name: Matt Rude
+  image: assets/img/contact/matt.jpeg
+  email: matt@mattrude.com
+  facebook: mattrude
+  twitter: mdrude
+  website: https://mattrude.com
+  xmpp: matt@mattrude.com
