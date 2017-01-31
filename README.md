@@ -1,8 +1,18 @@
-# Source Repository for therudes.com
+# Source Repository for therudes.com - [![Build Status](https://travis-ci.org/mattrude/therudes.com.svg?branch=master)](https://travis-ci.org/mattrude/therudes.com)
 
-[![Build Status](https://travis-ci.org/mattrude/therudes.com.svg?branch=master)](https://travis-ci.org/mattrude/therudes.com)
+This is the source repository for the website `therudes.com`.  This is a static site, built using the [Jekyll](https://jekyllrb.com/) scripting language.  The server is only required to server staic files.
 
-This is a static site, built using the [Jekyll](https://jekyllrb.com/) scripting language.
+## Table of Content
+
+* [Modifying the site](#modifying-the-site)
+ * [Changing the Front Page](#changing-the-front-page)
+ * [Changing Members Content](#changing-members-content)
+* [Building the Site](#building-the-site)
+ * [Installing required software](#installing-required-software)
+ * [Downloading the source code](#downloading-the-source-code)
+ * [Compiling the site](#compiling-the-site)
+* [Serving the site](#serving-the-site)
+* [License](#license)
 
 ## Modifying the site
 
