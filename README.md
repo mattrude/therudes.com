@@ -13,7 +13,7 @@ This is the source repository for the website `therudes.com`.  This is a static 
  * [Compiling the site](#compiling-the-site)
 * [Serving the site](#serving-the-site)
  * [Letsencrypt Build](#letsencrypt-build)
- * [Nginx Config](#nginx-config)
+ * [Nginx Full Config](#nginx-full-config)
 * [License](#license)
 
 ## Modifying the site
@@ -59,11 +59,72 @@ The Current config will put the finished site in `/var/www/therudes.com/`
 
 ## Serving the site
 
+Since this is a static site, only a simple web server is required to correctly server this site.  The site is currently set to link to TLS `https` encrypted pages, you may disable this function via the `url` item in the `_config.yml` file.
+
 ### Letsencrypt Build
+
+To server this site, you first must install the necessary packets.
+
+    apt -y install nginx letsencrypt
+
+And start nginx
+
+    service nginx start
+
+Then add the below into your `nginx.conf` file.
+
+    #----------------------------------------------------------------------
+    # therudes.com
+    #----------------------------------------------------------------------
+
+    server {
+        listen 80;
+        listen [::]:80;
+        server_name therudes.com;
+        server_name www.therudes.com;
+
+        location '/.well-known/acme-challenge' {
+            default_type "text/plain";
+            root /var/www/therudes.com;
+        }
+
+        location / {
+            return              301 https://$server_name$request_uri;
+        }
+    }
+
+And reload the `nginx` config file.
+
+    nginx -s reload
+
+After nginx has reloaded, and the site has been built, using the above setup, you need to create a new SSL key and request a certificate vi `letsencrypt`.
 
     letsencrypt certonly --webroot -w /var/www/therudes.com -d therudes.com -d www.therudes.com
 
-### Nginx Config
+After successfully creating your new SSL Key and Certificate, you need to add the reset of the config to your `nginx.conf` file.
+
+Add the below section to just below the previously added section to your `nginx.conf` file.
+
+    server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+        server_name therudes.com;
+        server_name www.therudes.com;
+        root /var/www/therudes.com;
+        index index.html;
+
+        ssl_certificate         /etc/letsencrypt/live/therudes.com/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/therudes.com/privkey.pem;
+        ssl_stapling on;
+
+        error_page 404 /404.html;
+    }
+
+And once again reload the `nginx` config file.
+
+    nginx -s reload
+
+### Nginx Full Config
 
 Add the below to your [nginx](https://nginx.org) config file, and reload your config.
 
