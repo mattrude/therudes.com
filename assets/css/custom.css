@@ -82,6 +82,7 @@ body {
         font-size: 3em;
         line-height: 1.213483146em;
         font-weight: bold;
+        text-align: center;
     }
     .section-header .section div, body > div.section.section-header > div > div {
         background-image: url(/assets/img/cabin-sideview.moble.jpg);
@@ -106,6 +107,7 @@ body {
         font-size: 3em;
         line-height: 1.213483146em;
         font-weight: bold;
+        text-align: center;
     }
     .section-header .section div, body > div.section.section-header > div > div {
         background-image: url(/assets/img/cabin-sideview.jpg);
