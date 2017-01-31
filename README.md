@@ -1,12 +1,18 @@
-# This is the Source Repository for therudes.com website
+# Source Repository for therudes.com
 
 [![Build Status](https://travis-ci.org/mattrude/therudes.com.svg?branch=master)](https://travis-ci.org/mattrude/therudes.com)
 
-This site is built using the [Jekyll](https://jekyllrb.com/) scripting language.
+This is a static site, built using the [Jekyll](https://jekyllrb.com/) scripting language.
+
+## Modifying the site
+
+### Changing the Front Page
+
+### Changing Members Content
 
 ## Building the site
 
-This document will walk you threw installing this site on a [Ubuntu](https://www.ubuntu.com) server, but that does not mean it will not work on other system.
+This site may be build on one system, then transferred to another system to be served.  This document will walk you threw installing this site on a [Ubuntu](https://www.ubuntu.com) server, but that does not mean it will not work on other system.
 
 ### Installing required software
 
@@ -38,6 +44,45 @@ Once you have everything, you must build the site.
     bundle exec jekyll build
 
 The Current config will put the finished site in `/var/www/therudes.com/`
+
+## Serving the site
+
+Add the below to your [nginx](https://nginx.org) config file, and reload your config.
+
+    #----------------------------------------------------------------------
+    # therudes.com
+    #----------------------------------------------------------------------
+
+    server {
+        listen 80;
+        listen [::]:80;
+        server_name therudes.com;
+        server_name www.therudes.com;
+
+        location '/.well-known/acme-challenge' {
+            default_type "text/plain";
+            root /var/www/therudes.com;
+        }
+
+        location / {
+            return              301 https://$server_name$request_uri;
+        }
+    }
+
+    server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+        server_name therudes.com;
+        server_name www.therudes.com;
+        root /var/www/therudes.com;
+        index index.html;
+
+        ssl_certificate         /etc/letsencrypt/live/therudes.com/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/therudes.com/privkey.pem;
+        ssl_stapling on;
+
+        error_page 404 /404.html;
+    }
 
 ## License
 
