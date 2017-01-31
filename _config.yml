@@ -30,7 +30,7 @@ exclude:
 - LICENSE
 
 gems:
-- jekyll-sitemap
+#- jekyll-sitemap
 #- jekyll-press
 #- jekyll-minifier
 
