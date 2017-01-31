@@ -4,15 +4,16 @@ title: Home
 permalink: /
 ---
 
+<!-- The Welcome section -->
 {% include welcome.html %}
 
 {% for section in site.data.frontpage %}
-
-<!-- The {{ section.name }} section -->
+<!-- The { section.name }} section -->
 <div class="container offsetanchor" id="{{ section.slug }}">
   <div class="row">
     {% include {{ section.file }} %}
     <hr>
   </div>
 </div>
+
 {% endfor %}
