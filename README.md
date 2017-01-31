@@ -12,6 +12,8 @@ This is the source repository for the website `therudes.com`.  This is a static 
  * [Downloading the source code](#downloading-the-source-code)
  * [Compiling the site](#compiling-the-site)
 * [Serving the site](#serving-the-site)
+ * [Letsencrypt Build](#letsencrypt-build)
+ * [Nginx Config](#nginx-config)
 * [License](#license)
 
 ## Modifying the site
@@ -56,6 +58,12 @@ Once you have everything, you must build the site.
 The Current config will put the finished site in `/var/www/therudes.com/`
 
 ## Serving the site
+
+### Letsencrypt Build
+
+    letsencrypt certonly --webroot -w /var/www/therudes.com -d therudes.com -d www.therudes.com
+
+### Nginx Config
 
 Add the below to your [nginx](https://nginx.org) config file, and reload your config.
 
