@@ -4,47 +4,15 @@ title: Home
 permalink: /
 ---
 
-<div class="section section-header" style="margin-top:-90px;max-height:1944px;">
-                <div class="parallax pattern-image">
-                    <div class="container">
-                        <div class="content">
-                            <h1>The Rude<br />Family</h1>
-                            <div class="separator-container">
-                                <div class="separator line-separator">∎</div>
-                            </div>
-                            <h5>Minneapolis, Minnesota, USA</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% include welcome.html %}
 
+{% for section in site.data.frontpage %}
 
-<!-- The About section -->
-<div class="container offsetanchor" id="about">
+<!-- The {{ section.name }} section -->
+<div class="container offsetanchor" id="{{ section.slug }}">
   <div class="row">
-    {% include about.html %}
+    {% include {{ section.file }} %}
     <hr>
   </div>
 </div>
-
-<!-- The Family Photo -->
-<div class="container offsetanchor" id="photo">
-  <div class="row">
-    {% include photo.html %}
-    <hr>
-  </div>
-</div>
-
-<!-- The Cabin Section -->
-{% include cabin.html %}
-
-{% include network.html %}
-
-<!-- The Contact Section -->
-<div class="container offsetanchor" id="contact">
-  <div class="row">
-    {% include contact.html %}
-    <hr>
-  </div>
-</div>
-
+{% endfor %}

@@ -1,0 +1,19 @@
+- name: About
+  slug: about
+  file: about.html
+
+- name: Family Photo
+  slug: photo
+  file: photo.html
+
+- name: Cabin
+  slug: cabin
+  file: cabin.html
+
+- name: Network
+  slug: network
+  file: network.html
+
+- name: Contact
+  slug: contact
+  file: contact.html
