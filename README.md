@@ -29,7 +29,7 @@ Then install the necessary Ruby Gem's
 After downloading the required packages, you must install the git repository.
 
     git clone https://github.com/mattrude/therudes.com.git
-    cd therudes-site
+    cd therudes.com
 
 ### Compiling the site
 
