@@ -1,6 +1,6 @@
   <div class="container offsetanchor">
-    <div class="row">
-      <div class="col-md-4">
+    <div class="hidden-xs hidden-sm">
+      <div class="col-md-4 col-sm-2">
         <div class="row">
           <a href="{{ site.url }}">Home</a>
         </div>
@@ -8,6 +8,9 @@
       <div class="col-md-4 pull-right text-right">
           Copyright &copy; 2005 &ndash; {{ site.time | date: "%Y" }} by <a href="{{ site.owner_url }}">{{ site.owner_name }}</a>
       </div>
+    </div>
+    <div class="hidden-md hidden-lg">
+      <div><a href="{{ site.url }}">Home</a> | Copyright &copy; 2005 &ndash; {{ site.time | date: "%Y" }} by <a href="{{ site.owner_url }}">{{ site.owner_name }}</a></div>
     </div>
   </div>
   {% if site.CDN == "1" %}
