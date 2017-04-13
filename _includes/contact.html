@@ -14,6 +14,7 @@
             {% if member.email != null %}<li><b><a href="mailto:{{ member.email }}" title="Email Address"><i class="fa fa-envelope "></i></a></b></li>{% endif %}
             {% if member.twitter != null %}<li><b><a href="https://www.twitter.com/{{ member.twitter }}" title="Twitter Profile Page"><i class="fa fa-twitter-square"></i></a></b></li>{% endif %}
             {% if member.facebook != null %}<li><b><a href="https://www.facebook.com/{{ member.facebook }}" title="Facebook Profile Page"><i class="fa fa-facebook-official"></i></a></b></li>{% endif %}
+            {% if member.github != null %}<li><b><a href="https://github.com/{{ member.github }}" title="Github Profile Page"><i class="fa fa-github-alt"></i></a></b></li>{% endif %}
             {% if member.xmpp != null %}<li><b><a href="xmpp:{{ member.xmpp }}" title="XMPP/Jabber ID"><i class="fa fa-commenting"></i></a></b></li>{% endif %}
             {% if member.website != null %}<li><b><a href="{{ member.website }}" title="Website"><i class="fa fa-link"></i></a></b></li>{% endif %}
           </ul>
