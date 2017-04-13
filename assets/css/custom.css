@@ -19,7 +19,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  [class*="col-"] {
+  [class="col-"] {
     margin-bottom: 20px;
   }
 }
