@@ -29,7 +29,7 @@ exclude:
 
 gems:
 #- jekyll-sitemap
-#- jekyll-press
+- jekyll-press
 #- jekyll-minifier
 
 jekyll-press:
