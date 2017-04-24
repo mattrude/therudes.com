@@ -28,7 +28,7 @@ exclude:
 - site-builder.sh
 
 gems:
-- jekyll-press
+#- jekyll-press
 - jekyll-sitemap
 #- jekyll-minifier
 
