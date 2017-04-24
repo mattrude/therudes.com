@@ -1,7 +1,4 @@
----
-path: /robots.txt
----
-
 User-agent: *
+Disallow: /cabin
 
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://therudes.com/sitemap.xml

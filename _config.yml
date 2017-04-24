@@ -5,7 +5,6 @@ description: ""
 url: "https://therudes.com"
 name: "therudes.com"
 baseurl: ""
-destination: "/var/www/therudes.com"
 
 owner_name: "Matt Rude"
 owner_url: "https://mattrude.com"
@@ -26,14 +25,15 @@ exclude:
 - README.md
 - CONTRIBUTING.md
 - LICENSE
+- site-builder.sh
 
 gems:
-#- jekyll-sitemap
 - jekyll-press
+- jekyll-sitemap
 #- jekyll-minifier
 
 jekyll-press:
-  exclude: 'robots.txt, contact.txt, contact-ecc.txt' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+  exclude: "robots.txt,sitemap.xml" # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
   js_options: {}      # js minifier options
   css_options: {}     # css minifier options
   html_options: {}    # html minifier options
