@@ -27,7 +27,7 @@ exclude:
 - LICENSE
 - site-builder.sh
 
-gems:
+plugins:
 #- jekyll-press
 - jekyll-sitemap
 #- jekyll-minifier
