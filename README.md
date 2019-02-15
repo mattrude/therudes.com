@@ -166,7 +166,7 @@ Add the below to your [nginx](https://nginx.org) config file, and reload your co
 ## License
 
     The Source Repository for therudes.com
-    Copyright (C) 2016-2017 - Matt Rude <matt@mattrude.com>
+    Copyright (C) 2016-2019 - Matt Rude <matt@mattrude.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
