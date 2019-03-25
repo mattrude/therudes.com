@@ -1,0 +1,12 @@
+{
+  "links": [
+    {
+      "rel": "urn:xmpp:alt-connections:xbosh",
+      "href": "https://im.therudes.com:5280/bosh"
+    },
+    {
+      "rel": "urn:xmpp:alt-connections:websocket",
+      "href": "wss://im.therudes.com:443/ws"
+    }
+  ]
+}
