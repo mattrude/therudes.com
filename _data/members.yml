@@ -11,9 +11,10 @@
 
 - name: Matt Rude
   image: assets/img/contact/matt.jpeg
-  email: matt@mattrude.com
+  email: matt@therudes.com
   github: mattrude
   facebook: mattrude
   twitter: mdrude
   website: https://mattrude.com
   xmpp: matt@mattrude.com
+  pgp: '0xd6343afdfab5a437'

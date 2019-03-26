@@ -1,5 +1,5 @@
   <h1>Contact Us</h1>
-  <div style="width:75%;margin:0 auto 0;">
+  <div id="contact">
     {% for member in site.data.members %}
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
@@ -17,6 +17,7 @@
             {% if member.github != null %}<li><b><a href="https://github.com/{{ member.github }}" title="Github Profile Page"><i class="fa fa-github-alt"></i></a></b></li>{% endif %}
             {% if member.xmpp != null %}<li><b><a href="xmpp:{{ member.xmpp }}" title="XMPP/Jabber ID"><i class="fa fa-commenting"></i></a></b></li>{% endif %}
             {% if member.website != null %}<li><b><a href="{{ member.website }}" title="Website"><i class="fa fa-link"></i></a></b></li>{% endif %}
+            {% if member.pgp != null %}<li><b><a href="{{ site.url }}/keys/{{ member.pgp }}.asc" title="OpenPGP Public Key"><i class="fa fa-key"></i></a></b></li>{% endif %}
           </ul>
         </div>
       </div>

@@ -10,9 +10,18 @@ body {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
 }
 
+div.caption i.fa {
+    text-align: center;
+    font-size: 1.9em;
+}
+
 @media (max-width: 1200px) {
   [class="col-"] {
     margin-bottom: 20px;
+  }
+  div.caption i.fa {
+      text-align: center;
+      font-size: 1.9em;
   }
 }
 
@@ -60,6 +69,24 @@ body {
     display: block;
     top: 0;
 }
+
+h1 {
+    padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+    div.caption i.fa {
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 768px) {
+    div.caption i.fa {
+        text-align: center;
+        font-size: 1.9em;
+    }
+}
+
 
 @media (max-width: 695px) {
     .section-header h1 {
