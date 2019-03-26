@@ -5,6 +5,7 @@ description: ""
 url: "https://therudes.com"
 name: "therudes.com"
 baseurl: ""
+destination: /var/www/therudes.com
 
 owner_name: "Matt Rude"
 owner_url: "https://mattrude.com"
