@@ -1,3 +1,7 @@
+---
+permalink: .well-known/host-meta
+---
+
 <XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>
   <Link rel="urn:xmpp:alt-connections:xbosh"
         href="https://im.therudes.com/bosh" />
