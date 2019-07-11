@@ -31,7 +31,6 @@ exclude:
 plugins:
 - jekyll-sitemap
 - jekyll-minifier
-#- jekyll-press
 
 jekyll-press:
   exclude: "robots.txt,sitemap.xml" # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
