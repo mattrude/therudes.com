@@ -29,7 +29,7 @@ exclude:
 - site-builder.sh
 
 plugins:
-#- jekyll-press
+- jekyll-press
 - jekyll-sitemap
 #- jekyll-minifier
 
