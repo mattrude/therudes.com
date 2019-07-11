@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'rouge'
 gem 'kramdown'
+gem 'therubyracer'
 gem 'jekyll'
 gem 'jekyll-minifier'
 gem 'jekyll-press'
