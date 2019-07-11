@@ -29,9 +29,9 @@ exclude:
 - site-builder.sh
 
 plugins:
-- jekyll-press
+#- jekyll-press
 - jekyll-sitemap
-#- jekyll-minifier
+- jekyll-minifier
 
 jekyll-press:
   exclude: "robots.txt,sitemap.xml" # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
