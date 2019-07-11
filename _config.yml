@@ -30,7 +30,7 @@ exclude:
 
 plugins:
 - jekyll-sitemap
-#- jekyll-minifier
+- jekyll-minifier
 - jekyll-press
 
 jekyll-press:
