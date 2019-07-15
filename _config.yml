@@ -24,16 +24,14 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - README.md
-- CONTRIBUTING.md
 - LICENSE
-- site-builder.sh
 
 plugins:
 - jekyll-sitemap
 - jekyll-minifier
 
-jekyll-press:
-  exclude: "robots.txt,sitemap.xml" # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-  js_options: {}      # js minifier options
-  css_options: {}     # css minifier options
-  html_options: {}    # html minifier options
+jekyll-minifier:
+  exclude:
+  - robots.txt
+  - sitemap.xml
+
