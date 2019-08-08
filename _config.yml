@@ -27,8 +27,8 @@ exclude:
 - LICENSE
 
 plugins:
-- jekyll-sitemap
 - jekyll-minifier
+#- jekyll-sitemap
 
 jekyll-minifier:
   exclude:
