@@ -1,10 +1,8 @@
 # Site settings
 title: therudes.com Communication Service
-email: matt@mattrude.com
 description: ""
 url: "https://therudes.com"
 name: "therudes.com"
-baseurl: ""
 destination: /var/www/therudes.com
 
 owner_name: "Matt Rude"
@@ -23,8 +21,8 @@ date: YYYY-MM-DD HH:MM
 exclude:
 - Gemfile
 - Gemfile.lock
-- README.md
 - LICENSE
+- README.md
 
 plugins:
 - jekyll-minifier
@@ -34,4 +32,3 @@ jekyll-minifier:
   exclude:
   - robots.txt
   - sitemap.xml
-
