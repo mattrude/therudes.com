@@ -7,9 +7,11 @@ before_install:
   - gem install kramdown
   - gem install therubyracer
   - gem install jekyll
-  - gem install jekyll-sitemap
+  - gem install html-proofer
 install: bundle install
-script: bundle exec jekyll build -d _site && bundle exec htmlproofer htmlproofer --url-swap "https\://therudes.com/:/,https\://therudes.com:/" ./_site
+script: bundle exec jekyll build -d _site
 rvm:
-  - 2.3.1
-  - 2.3.3
+  - 2.5.4
+  - 2.5.5
+  - 2.6.3
+  - 2.6.4
