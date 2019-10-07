@@ -1,60 +1,27 @@
-    <h1>Our Family Photo</h1>
+<h1>Our Family Photo</h1>
 
 <br />
 
 <div style="background-color:black;padding:10px;">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-stackedtabs" role="tablist" style="float:right;width:20%;">
-    <li role="presentation" class="active"><a href="#2018" aria-controls="2018" role="tab" data-toggle="tab">2018</a></li>
-    <li role="presentation"><a href="#2017" aria-controls="2017" role="tab" data-toggle="tab">2017</a></li>
-    <li role="presentation"><a href="#2016" aria-controls="2016" role="tab" data-toggle="tab">2016</a></li>
-    <li role="presentation"><a href="#2015" aria-controls="2015" role="tab" data-toggle="tab">2015</a></li>
-    <li role="presentation"><a href="#2014" aria-controls="2014" role="tab" data-toggle="tab">2014</a></li>
-    <li role="presentation"><a href="#2012" aria-controls="2012" role="tab" data-toggle="tab">2012</a></li>
-    <li role="presentation"><a href="#2011" aria-controls="2011" role="tab" data-toggle="tab">2011</a></li>
-    <li role="presentation"><a href="#2010" aria-controls="2010" role="tab" data-toggle="tab">2010</a></li>
-    <li role="presentation"><a href="#2009" aria-controls="2009" role="tab" data-toggle="tab">2009</a></li>
-    <li role="presentation"><a href="#2008" aria-controls="2008" role="tab" data-toggle="tab">2008</a></li>
-  </ul>
+    <!-- Nav tabs -->
+    <ul class="nav nav-stackedtabs" role="tablist" style="float:right;width:20%;">
+        {% for item in site.data.photos %}
+            <li role="presentation" class="active"><a href="#{{ item.year }}" aria-controls="{{ item.year }}" role="tab" data-toggle="tab">{{ item.year }}</a></li>
+        {% endfor %}
+    </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="2018">
-        <img src="/assets/img/family-photos/family-photo.2018.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
+    <!-- Tab panes -->
+    <div class="tab-content">
+        {% for photo in site.data.photos %}
+            <div role="tabpanel" class="tab-pane active" id="{{} photo.year }}">
+                <img src="/assets/img/family-photos/{{ photo.image }}" class="img-responsive" alt="Responsive image" style="width:80%">
+                {% if photo.discription %}
+                    <div>
+                        {{ photo.discription }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
     </div>
-    <div role="tabpanel" class="tab-pane" id="2017">
-        <img src="/assets/img/family-photos/family-photo.2017.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2016">
-        <img src="/assets/img/family-photos/family-photo.2016.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2015">
-        <img src="/assets/img/family-photos/family-photo.2015.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-        <div>
-            <h3>Thanksgiving, 2015</h3>
-            <span><b>Rear Row:</b> Lisa, Emma, Sandy, Linda, Ruby, Doug, Amanda, Brian</span><br />
-            <span><b>Front Row:</b> Wade, Matt, Amdada, Lila, Scott, Sam, Odin</span>
-        </div>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2014">
-        <img src="/assets/img/family-photos/family-photo.2014.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2012">
-        <img src="/assets/img/family-photos/family-photo.2012.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2011">
-        <img src="/assets/img/family-photos/family-photo.2011.small.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2010">
-        <img src="/assets/img/family-photos/family-photo.2010.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2009">
-        <img src="/assets/img/family-photos/family-photo.2009.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-    <div role="tabpanel" class="tab-pane" id="2008">
-        <img src="/assets/img/family-photos/family-photo.2008.jpg" class="img-responsive" alt="Responsive image" style="width:80%">
-    </div>
-  </div>
-
 </div>
