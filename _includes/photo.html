@@ -14,7 +14,7 @@
     <!-- Tab panes -->
     <div class="tab-content">
         {% for photo in site.data.photos %}
-            <div role="tabpanel" class="tab-pane active" id="{{ photo.year }}">
+            <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ photo.year }}">
                 <img src="/assets/img/family-photos/{{ photo.image }}" class="img-responsive" alt="Responsive image" style="width:80%">
                 {% if photo.discription %}
                     <div>
