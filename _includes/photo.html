@@ -7,7 +7,7 @@
     <!-- Nav tabs -->
     <ul class="nav nav-stackedtabs" role="tablist" style="float:right;width:20%;">
         {% for item in site.data.photos %}
-            <li role="presentation" class="active"><a href="#{{ item.year }}" aria-controls="{{ item.year }}" role="tab" data-toggle="tab">{{ item.year }}</a></li>
+            <li role="presentation" {% if forloop.first %}class="active"{% endfor %}><a href="#{{ item.year }}" aria-controls="{{ item.year }}" role="tab" data-toggle="tab">{{ item.year }}</a></li>
         {% endfor %}
     </ul>
 
