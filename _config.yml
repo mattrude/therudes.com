@@ -24,11 +24,11 @@ exclude:
 - LICENSE
 - README.md
 
-plugins:
-- jekyll-minifier
+#plugins:
+#- jekyll-minifier
 #- jekyll-sitemap
 
-jekyll-minifier:
-  exclude:
-  - robots.txt
-  - sitemap.xml
+#jekyll-minifier:
+#  exclude:
+#  - robots.txt
+#  - sitemap.xml
