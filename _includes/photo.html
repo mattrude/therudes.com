@@ -18,7 +18,8 @@
                 <img src="/assets/img/family-photos/{{ photo.image }}" class="img-responsive" alt="Responsive image" style="width:80%">
                 {% if photo.discription %}
                     <div>
-                        {{ photo.discription }}
+                        <h2>{{ photo.title }}</h2>
+                        <p>{{ photo.discription }}</p>
                     </div>
                 {% endif %}
             </div>

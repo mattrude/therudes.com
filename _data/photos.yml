@@ -6,11 +6,10 @@
   image: family-photo.2016.small.jpg
 - year: 2015
   image: family-photo.2015.small.jpg
-  discription: '<h3>Thanksgiving, 2015</h3><span><b>Rear Row:</b> Lisa, Emma, Sandy, Linda, Ruby, Doug, Amanda, Brian</span><br /><span><b>Front Row:</b> Wade, Matt, Amdada, Lila, Scott, Sam, Odin</span>'
+  title: Thanksgiving, 2015
+  discription: '<b>Rear Row:</b> Lisa, Emma, Sandy, Linda, Ruby, Doug, Amanda, Brian<br /><b>Front Row:</b> Wade, Matt, Amdada, Lila, Scott, Sam, Odin'
 - year: 2014
   image: family-photo.2014.small.jpg
-- year: 2013
-  image: family-photo.2013.jpg
 - year: 2012
   image: family-photo.2012.small.jpg
 - year: 2011
