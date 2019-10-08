@@ -35,6 +35,8 @@ responsive_image:
   sizes:
   - width: 920
   strip: true
+  save_to_source: false
+  cache: true
 
 #jekyll-minifier:
 #  exclude:
