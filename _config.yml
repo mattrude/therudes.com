@@ -24,9 +24,18 @@ exclude:
 - LICENSE
 - README.md
 
-#plugins:
+plugins:
+- jekyll-responsive-image
 #- jekyll-minifier
 #- jekyll-sitemap
+
+responsive_image:
+  template: _includes/responsive-image.html
+  default_quality: 90
+  sizes:
+  - width: 920
+  strip: true
+  cache: true
 
 #jekyll-minifier:
 #  exclude:

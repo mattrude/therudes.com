@@ -15,7 +15,12 @@
     <div class="tab-content">
         {% for photo in site.data.photos %}
             <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ photo.year }}">
-                <img src="/assets/img/family-photos/{{ photo.image }}" class="img-responsive" alt="Responsive image" style="width:80%">
+                {% responsive_image_block %}
+                    path: assets/img/family-photos/{{ photo.image }}
+                    class: "img-responsive"
+                    alt: "{{ item.year }}"
+                    title: "{{ item.year }}"
+                {% endresponsive_image_block %}
                 {% if photo.discription %}
                     <div>
                         <h2>{{ photo.title }}</h2>
