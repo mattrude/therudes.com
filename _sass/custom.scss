@@ -36,18 +36,14 @@ div.caption i.fa {
 .dropdown-menu {
   width: 1000px;
   margin-left: -425px;
+  &>li {
+        padding: 3px 10px;
+        &>a {
+            display: inline;
+            padding: 3px 10px;
+      }
+  }
 }
-
-.dropdown-menu>li {
-  padding: 3px 10px;
-}
-
-
-.dropdown-menu>li>a {
-  display: inline;
-  padding: 3px 10px;
-}
-
 
 .section .parallax > img {
   width:100%;
@@ -148,9 +144,6 @@ div.caption i.fa {
 @media (min-width: 768px) {
     .section-header .separator {
         width: 20em;
-    }
-
-    .section-header .separator {
         color: #fff;
         margin: 2em auto;
         max-width: 300px;
